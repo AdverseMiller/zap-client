@@ -3355,6 +3355,7 @@ struct ConfigManager
 		Features::Ragebot::MinDistance = Config::Ragebot::MinDistance;
 		Features::Ragebot::HipfireDistance = Config::Ragebot::HipfireDistance;
 		Features::Ragebot::ZoomDistance = Config::Ragebot::ZoomDistance;
+		Features::Ragebot::RageRCS = Config::Ragebot::RageRCS;
 		Features::Ragebot::RecoilRate = Config::Ragebot::RecoilRate;
 		// Weapon Toggles
 		// Light

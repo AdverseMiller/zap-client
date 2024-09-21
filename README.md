@@ -10,6 +10,7 @@ Instructions are down below
 **Bug Fixes:**
 
 	Ragebot now checks for "Visibility Check", as it was ignored before
+	Fixed some settings not being saved to/loaded from the config
 
 # Information
 
