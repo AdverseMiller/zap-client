@@ -1,5 +1,5 @@
 # zap-client [Apex External Cheat For Linux]
-**Updated to Game Version v3.0.76.22 (Season 22) (06.08.24)**
+**Updated to Game Version v3.0.80.27**
 
 By **Gerosity**
 
@@ -7,9 +7,8 @@ All credits to original owners
 
 Instructions are down below
 
-**Never cheat on a main account, its not worth it**
-
-# This Cheat Is Now Being Sold Online. Don't Buy It
+**Bug Fixes:**
+	Ragebot now checks for "Visibility Check", as it was ignored before
 
 # Information
 

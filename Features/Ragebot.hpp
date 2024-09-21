@@ -516,7 +516,7 @@ struct Ragebot
 		if (target == nullptr ||
 			!target->IsValid() ||
 			!target->IsCombatReady() ||
-			!target->IsVisible ||
+			(!target->IsVisible && Features::Ragebot::VisCheck) ||
 			!target->IsHostile ||
 			target->Distance2DToLocalPlayer < Conversion::ToGameUnits(Features::Ragebot::MinDistance) ||
 			target->Distance2DToLocalPlayer > Conversion::ToGameUnits(FinalDistance))
