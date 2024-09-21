@@ -46,7 +46,7 @@ struct Player {
     int LastTimeAimedAtPrevious;
     bool IsAimedAt;
 
-    int LastVisibleTime;
+    float LastVisibleTime;
     int LastTimeVisiblePrevious;
     bool IsVisible;
 
@@ -156,12 +156,9 @@ struct Player {
 
         LocalOrigin = Memory::Read<Vector3D>(BasePointer + OFF_LOCAL_ORIGIN);
 
-        LastTimeAimedAt = Memory::Read<int>(BasePointer + OFF_LAST_AIMEDAT_TIME);
-        IsAimedAt = LastTimeAimedAtPrevious < LastTimeAimedAt;
-        LastTimeAimedAtPrevious = LastTimeAimedAt;
-        float WorldTime = Memory::Read<float>(Myself->BasePointer + OFF_TIME_BASE);
-        float Time1 = Memory::Read<float>(BasePointer + OFF_LAST_VISIBLE_TIME);
-        IsVisible = (Time1 + 0.2) >= WorldTime || IsAimedAt;
+		float vis_check = Memory::Read<float>(BasePointer + OFF_LAST_VISIBLE_TIME);
+		IsVisible = vis_check > LastVisibleTime;
+		LastVisibleTime = vis_check;
 
         Health = Memory::Read<int>(BasePointer + OFF_HEALTH);
         MaxHealth = Memory::Read<int>(BasePointer + OFF_MAXHEALTH);

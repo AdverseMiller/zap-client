@@ -11,6 +11,7 @@ Instructions are down below
 
 	Ragebot now checks for "Visibility Check", as it was ignored before
 	Fixed some settings not being saved to/loaded from the config
+	Visibility Check is now much shorter and more reliable
 
 # Information
 
