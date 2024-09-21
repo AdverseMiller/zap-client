@@ -8,6 +8,7 @@ All credits to original owners
 Instructions are down below
 
 **Bug Fixes:**
+
 	Ragebot now checks for "Visibility Check", as it was ignored before
 
 # Information
