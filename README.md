@@ -9,7 +9,7 @@ Instructions are down below
 
 **Bug Fixes:**
 
-	Ragebot now checks for "Visibility Check", as it was ignored before
+	Ragebot now respects Visibility Check and Team Check, as they were ignored before
 	Fixed some settings not being saved to/loaded from the config
 	Visibility Check is now much shorter and more reliable
 
